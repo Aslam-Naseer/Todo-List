@@ -1,0 +1,76 @@
+#error {
+  position: absolute;
+  top: 15px;
+  color: red;
+  font-size: 15px;
+}
+
+#textBox {
+  padding: 0 15px;
+  margin-top: 70px;
+  width: 75%;
+  height: 10%;
+  font-size: 20px;
+  color: var(--text);
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 25px;
+}
+
+#dateBox {
+  padding: 5px 15px;
+  margin-top: 15px;
+  border-style: none;
+  color: var(--text);
+  color-scheme: dark;
+  border-radius: 10px;
+  background-color: unset;
+}
+
+#memoBox {
+  padding: 10px;
+  margin-top: 40px;
+  width: 85%;
+  height: 30%;
+  resize: none;
+  color: var(--text);
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.container {
+  margin-top: 20px;
+  position: relative;
+  font-size: 17px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#highPriority {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 2.5px;
+  left: 0;
+  height: 12px;
+  width: 12px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  transition: all 0.15ms;
+  background-color: unset;
+  transition: all 0.5s;
+}
+
+.container:hover .checkmark {
+  background-color: rgba(255, 255, 255, 0.1);
+  left: -30px;
+}
+
+.container input:checked~.checkmark {
+  background-color: var(--theme);
+  left: -30px;
+}

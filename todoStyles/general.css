@@ -1,0 +1,60 @@
+:root {
+  --theme: cyan;
+  --text: white;
+}
+
+body {
+  background-color: #121212;
+  color: var(--text);
+  font-family: roboto, arial;
+}
+
+.right-sec,
+.left-sec {
+  z-index: 1;
+}
+
+
+main {
+  position: fixed;
+  top: 10%;
+  left: 37%;
+}
+
+main div {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+  background-color: rgb(26, 26, 26);
+  box-shadow: 0 0 10px var(--theme);
+  position: absolute;
+  height: 500px;
+  width: 300px;
+  margin: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: all 0.75s;
+}
+
+.add,
+.rem {
+  position: absolute;
+  top: 450px;
+  color: var(--text);
+  background-color: unset;
+  border-style: none;
+  font-weight: 700;
+  font-size: 22px;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.add:hover,
+.rem:hover {
+  transform: translateY(-5px);
+  color: var(--theme);
+  opacity: 0.85;
+}

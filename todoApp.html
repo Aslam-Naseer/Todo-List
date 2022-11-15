@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Aslam's To Do App</title>
+
+    <link rel="stylesheet" href="todoStyles/general.css" />
+    <link rel="stylesheet" href="todoStyles/right.css" />
+    <link rel="stylesheet" href="todoStyles/mid.css" />
+    <link rel="stylesheet" href="todoStyles/left.css" />
+
+    <script defer src="todoApp.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="left-sec">
+        <p id="emptyPage"></p>
+        <h2 id="title"></h2>
+        <p id="date"></p>
+        <p id="memo"></p>
+        <p id="priority"></p>
+        <button class="rem" onclick="removeTodo(event)">Remove</button>
+      </div>
+      <div class="mid-sec">
+        <h1 class="logo">Todo List</h1>
+        <ul id="todoList"></ul>
+        <button id="pageToggle" data-is-toggled="false">
+          &#x2770; &nbsp; &#x2771;
+        </button>
+      </div>
+      <div class="right-sec">
+        <p id="error"></p>
+        <input type="text" id="textBox" />
+        <input type="date" id="dateBox" />
+        <textarea id="memoBox"></textarea>
+        <label class="container"
+          >High Priority
+          <input type="checkbox" id="highPriority" />
+          <span class="checkmark"></span>
+        </label>
+        <button onclick="addTodo()" class="add">Add Todo</button>
+      </div>
+    </main>
+  </body>
+</html>

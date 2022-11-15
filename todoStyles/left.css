@@ -1,0 +1,41 @@
+#emptyPage {
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  font-weight: 500;
+  font-size: 35px;
+  ;
+}
+
+#title {
+  font-size: 30px;
+  max-width: 75%;
+  margin: 85px 0 0 0;
+  background-color: unset;
+  border: none;
+  overflow-x: scroll;
+}
+
+#date {
+  padding: 5px 15px;
+  margin-top: 15px;
+  border-style: none;
+  border-radius: 10px;
+  background-color: unset;
+}
+
+#memo {
+  padding: 10px;
+  margin: 32px 32px 0px 25px;
+  width: 82%;
+  height: 30%;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  overflow-y: scroll;
+}
+
+#memo::-webkit-scrollbar,
+#title::-webkit-scrollbar {
+  display: none;
+}

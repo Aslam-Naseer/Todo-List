@@ -1,0 +1,60 @@
+.mid-sec {
+  z-index: 2;
+}
+
+.logo {
+  text-shadow: 0 0 3px var(--text);
+  color: rgb(0, 0, 0);
+  font-size: 55px;
+  font-weight: 700;
+  margin: 40px 0 25px 0;
+}
+
+#todoList {
+  align-self: flex-start;
+  height: 50%;
+  width: 75%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#todoList::-webkit-scrollbar {
+  display: none;
+}
+
+li {
+  padding: 5px 7px;
+  font-size: 18px;
+  border-radius: 10px;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+li:hover {
+  background-color: rgb(255, 255, 255, 0.03);
+}
+
+#pageToggle {
+  margin-top: 15px;
+  width: 55%;
+  height: 7.5%;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-style: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bolder;
+  font-size: 20px;
+  user-select: none;
+
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+#pageToggle:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+#pageToggle:active {
+  background-color: rgba(255, 255, 255, 0.35);
+}
